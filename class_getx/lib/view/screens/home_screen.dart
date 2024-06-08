@@ -1,9 +1,5 @@
-<<<<<<< HEAD
+import 'package:class_getx/controller/home_controller.dart';
 import 'package:class_getx/view/screens/first_screen.dart';
-=======
-import 'package:class_getx/first_screen.dart';
-import 'package:class_getx/models/home_controller.dart';
->>>>>>> dcef056df9bb557535c6c6c4831eb6b32c7bd6a1
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,7 +10,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-<<<<<<< HEAD
         backgroundColor: Colors.amberAccent,
         actions: [
           TextButton(
@@ -26,8 +21,6 @@ class HomeScreen extends StatelessWidget {
                 style: TextStyle(color: Colors.black),
               ))
         ],
-=======
->>>>>>> dcef056df9bb557535c6c6c4831eb6b32c7bd6a1
         title: Text(
           'Getx - Home',
           style: Theme.of(context).textTheme.headlineMedium,
@@ -37,9 +30,7 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-<<<<<<< HEAD
-          
+        children: [          
                Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -63,9 +54,7 @@ class HomeScreen extends StatelessWidget {
                   //     style: Theme.of(context).textTheme.headlineMedium,
                   //     textAlign: TextAlign.center),
                 ],
-              )
-            
-=======
+              ),
           GetBuilder<HomeController>(
             init: HomeController(),
             builder: (controller) {
@@ -90,7 +79,6 @@ class HomeScreen extends StatelessWidget {
               );
             },
           ),
->>>>>>> dcef056df9bb557535c6c6c4831eb6b32c7bd6a1
         ],
       ),
     );
