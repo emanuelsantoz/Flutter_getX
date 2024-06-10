@@ -1,3 +1,4 @@
+import 'package:class_getx/controller/home_controller.dart';
 import 'package:class_getx/view/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,10 +19,14 @@ class SecundScreen extends StatelessWidget {
           textColor: Colors.white,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
           onPressed: () {
-            Get.offAll(const HomeScreen());
+            Get.offAll(HomeScreen());
           },
           child: Text('Home Screen'),
-          )
+          ),
+
+          GetBuilder<HomeController>(builder: (context){
+            return Text(context.name);
+          })
         ],
        ),
     );
